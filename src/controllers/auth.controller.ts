@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import { AuthModel } from "../model/auth.model";
 import { createdToken } from "../utils/jwt";
-import { Decoded } from "../types/tipos";
 
 export class AuthContrller {
   static async register(req: Request, res: Response) {

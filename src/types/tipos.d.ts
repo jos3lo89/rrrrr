@@ -19,3 +19,19 @@ declare module "express" {
     user?: Decoded;
   }
 }
+
+export interface User {
+  name: string;
+  email: string;
+  password: string;
+}
+
+export interface Task {
+  title: string;
+  description: string;
+  idUser: string;
+}
+
+export interface TaskUpdated extends Task {
+  id: string;
+}

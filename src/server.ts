@@ -1,4 +1,5 @@
 import app from "./app";
+import "./config/config";
 
 function index() {
   try {
